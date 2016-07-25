@@ -36,6 +36,9 @@ cuba {
     tomcat {
         dir = "$project.rootDir/build/tomcat"
     }
+    ide {
+        vcs = 'Git'
+    }
 }
 
 def hsql = 'org.hsqldb:hsqldb:2.2.9'
