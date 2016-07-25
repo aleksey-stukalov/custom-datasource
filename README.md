@@ -1,2 +1,4 @@
 # custom-datasource
-This example illustrates how to create and use custom collection datasource in the CUBA Platform
+This example illustrates how to create and use custom collection datasource in your CUBA Application.
+
+For the example this application fetches data about currency rates through a collection datasource from [this resource](http://fixer.io/).
