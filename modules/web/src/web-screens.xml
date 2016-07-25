@@ -3,4 +3,6 @@
     <include file="/screens.xml"/>
     <screen id="currency-screen"
             template="com/company/customdatasource/web/screens/currency-screen.xml"/>
+    <screen id="mainWindow"
+            template="com/company/customdatasource/web/mainwindow/ext-mainwindow.xml"/>
 </screen-config>
