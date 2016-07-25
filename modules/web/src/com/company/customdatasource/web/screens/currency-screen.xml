@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.customdatasource.web.screens.CurrencyScreen"
+        messagesPack="com.company.customdatasource.web.screens">
+    <dsContext>
+        <collectionDatasource id="currencyRatesDs"
+                              allowCommit="false"
+                              class="com.company.customdatasource.entity.CurrencyRate"
+                              datasourceClass="com.company.customdatasource.web.screens.customdatasources.CurrencyRateDatasource"/>
+    </dsContext>
+    <layout expand="currencyRatesTable"
+            spacing="true">
+        <hbox align="MIDDLE_LEFT"
+              spacing="true">
+            <label align="MIDDLE_LEFT"
+                   value="Currency From"/>
+            <lookupField id="currencyLookup"
+                         align="MIDDLE_LEFT"
+                         width="250px"/>
+        </hbox>
+        <table id="currencyRatesTable"
+               height="300px"
+               width="100%">
+            <columns>
+                <column id="currencyTo"/>
+                <column id="conversionRate"/>
+            </columns>
+            <rows datasource="currencyRatesDs"/>
+        </table>
+    </layout>
+</window>
