@@ -24,5 +24,7 @@ public class CurrencyScreen extends AbstractWindow {
 
         currencyLookup.setOptionsEnum(CurrencyEnum.class);
         currencyLookup.addValueChangeListener(e -> currencyRatesDs.refresh(ParamsMap.of("currency-from", currencyLookup.getValue())));
+
+        currencyLookup.setValue(CurrencyEnum.USD);
     }
 }

@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         class="com.company.customdatasource.web.mainwindow.ExtAppMainWindow"
-        extends="/com/haulmont/cuba/web/app/mainwindow/mainwindow.xml">
-    <layout/>
+        extends="/com/haulmont/cuba/web/app/mainwindow/mainwindow.xml"
+        xmlns:main="http://schemas.haulmont.com/cuba/mainwindow.xsd">
+    <timers>
+        <timer id="showRate"
+               autostart="true"
+               delay="5000"
+               onTimer="showNextCurrencyRate"
+               repeating="true"/>
+    </timers>
+    <layout>
+        <split id="foldersSplit">
+            <main:workArea id="workArea">
+                <main:initialLayout>
+                    <vbox align="MIDDLE_CENTER">
+                        <label id="label"
+                               align="MIDDLE_CENTER"
+                               htmlEnabled="true"
+                               width="100%"/>
+                        <linkButton caption="Click here to see more..."
+                                    invoke="openCurrencyExchangeScreen"
+                                    align="MIDDLE_CENTER"/>
+                    </vbox>
+                </main:initialLayout>
+            </main:workArea>
+        </split>
+    </layout>
 </window>

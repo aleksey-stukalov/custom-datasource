@@ -20,7 +20,6 @@
                          width="250px"/>
         </hbox>
         <table id="currencyRatesTable"
-               height="300px"
                width="100%">
             <columns>
                 <column id="currencyTo"/>
