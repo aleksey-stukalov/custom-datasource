@@ -3,6 +3,8 @@ This example illustrates how to create and use custom collection datasource in y
 
 For the example this application fetches data about currency rates through a collection datasource from [this resource](http://fixer.io/).
 
+## Short Overview
+
 The _[CurrencyRate](https://github.com/aleksey-stukalov/custom-datasource/blob/master/modules/global/src/com/company/customdatasource/entity/CurrencyRate.java)_ entity contains information about conversion rate between two currencies. The entity is not stored in the database, getting data through _[CurrencyService](https://github.com/aleksey-stukalov/custom-datasource/blob/0770428e1cd87ff37a2632ac3c7105208c45b0f1/modules/global/src/com/company/customdatasource/service/CurrencyService.java)_.
 
 _[CurrencyServiceBean](https://github.com/aleksey-stukalov/custom-datasource/blob/0770428e1cd87ff37a2632ac3c7105208c45b0f1/modules/core/src/com/company/customdatasource/service/CurrencyServiceBean.java)_ implements _[CurrencyService](https://github.com/aleksey-stukalov/custom-datasource/blob/0770428e1cd87ff37a2632ac3c7105208c45b0f1/modules/global/src/com/company/customdatasource/service/CurrencyService.java)_, parsing JSON response of the 3rd party service into a collection of _[CurrencyRate](https://github.com/aleksey-stukalov/custom-datasource/blob/master/modules/global/src/com/company/customdatasource/entity/CurrencyRate.java)_ entities.
