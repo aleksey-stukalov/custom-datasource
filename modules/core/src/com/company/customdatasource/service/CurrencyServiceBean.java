@@ -19,6 +19,13 @@ import java.util.Set;
 @Service(CurrencyService.NAME)
 public class CurrencyServiceBean implements CurrencyService {
 
+    /**
+     * Method calls fixer.io service to get up to date info on currency conversion rates
+     * in JSON format and converts data into a set of CurrencyRate entities
+     * @param baseCurrency shows what currency will the the base one;
+     *                     all the conversion rates will be returned into the base currency
+     * @return Set of CurrencyRate entities
+     */
     @Override
     public Set<CurrencyRate> getRates(CurrencyEnum baseCurrency){
 

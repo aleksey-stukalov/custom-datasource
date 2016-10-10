@@ -17,6 +17,8 @@ import java.util.UUID;
 
 /**
  * Created by stukalov on 25/07/2016.
+ * Wraps CurrencyService into a collection datasource to be able to use
+ * standard CUBA datasource mechanisms
  */
 public class CurrencyRateDatasource extends CustomCollectionDatasource<CurrencyRate, UUID> {
 

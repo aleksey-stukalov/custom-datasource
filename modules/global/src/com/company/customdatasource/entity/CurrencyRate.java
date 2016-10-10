@@ -2,9 +2,12 @@ package com.company.customdatasource.entity;
 
 import com.haulmont.chile.core.annotations.MetaClass;
 import com.haulmont.chile.core.annotations.MetaProperty;
-import java.math.BigDecimal;
+import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.cuba.core.entity.AbstractNotPersistentEntity;
 
+import java.math.BigDecimal;
+
+@NamePattern("%s -> %s|currencyFrom,currencyTo")
 @MetaClass(name = "customdatasource$CurrencyRate")
 public class CurrencyRate extends AbstractNotPersistentEntity {
     private static final long serialVersionUID = 5841089201111192140L;
