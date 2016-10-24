@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="Custom datasource with paging"
+        class="com.company.customdatasource.web.screens.FooScreen"
+        messagesPack="com.company.customdatasource.web.screens">
+    <dsContext>
+        <collectionDatasource id="foosDs"
+                              allowCommit="false"
+                              class="com.company.customdatasource.entity.Foo"
+                              datasourceClass="com.company.customdatasource.web.screens.customdatasources.FooCollectionDatasource"/>
+    </dsContext>
+    <layout>
+        <table height="100%"
+               width="100%">
+            <columns>
+                <column id="num"/>
+                <column id="name"/>
+            </columns>
+            <rows datasource="foosDs"/>
+            <rowsCount/>
+        </table>
+    </layout>
+</window>

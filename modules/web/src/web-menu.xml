@@ -3,5 +3,6 @@
     <menu id="application"
           insertBefore="administration">
         <item id="currency-screen"/>
+        <item id="foo-screen"/>
     </menu>
 </menu-config>

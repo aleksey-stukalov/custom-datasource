@@ -5,4 +5,6 @@
             template="com/company/customdatasource/web/screens/currency-screen.xml"/>
     <screen id="mainWindow"
             template="com/company/customdatasource/web/mainwindow/ext-mainwindow.xml"/>
+    <screen id="foo-screen"
+            template="com/company/customdatasource/web/screens/foo-screen.xml"/>
 </screen-config>
