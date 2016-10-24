@@ -11,6 +11,10 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import java.sql.SQLException;
 
+/**
+ * Class generates test data on application start
+ * Test data is used for paging datasource feature demonstration
+ */
 @Component
 public class TestDataGenerator implements AppContext.Listener {
 

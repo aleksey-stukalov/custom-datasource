@@ -4,6 +4,10 @@ import com.haulmont.chile.core.annotations.MetaClass;
 import com.haulmont.chile.core.annotations.MetaProperty;
 import com.haulmont.cuba.core.entity.AbstractNotPersistentEntity;
 
+/**
+ * Entity used for paging custom datasource demonstration
+ */
+
 @MetaClass(name = "customdatasource$Foo")
 public class Foo extends AbstractNotPersistentEntity {
     private static final long serialVersionUID = 7219450601293959128L;

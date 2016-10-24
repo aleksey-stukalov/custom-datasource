@@ -13,6 +13,10 @@ public class FooScreen extends AbstractWindow {
 
     @Override
     public void init(Map<String, Object> params) {
+        /*
+        To enable paging limiting size must be set
+        Datasource will return records by portions of 50
+         */
         foosDs.setMaxResults(50);
     }
 }
